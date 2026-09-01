@@ -1,0 +1,102 @@
+===========================================================================
+SOLANA MEME PAPER TRADING REPORT
+===========================================================================
+
+PERIOD
+Start: 2026-08-30 11:49:28 UTC
+End:   2026-08-30 12:20:30 UTC
+
+SCANNER
+Expected cycles: 180
+Started:         31
+Completed:       31
+Failed:          0
+
+TOKENS
+Discovered:       29
+Analyzed:         29
+Quarantine:       0
+Monitoring:       29
+Ready:            0
+Open:             0
+Closed:           0
+Rejected:         0
+Security blocked: 0
+Expired:          0
+
+SECURITY
+Checks performed:         769
+Unique tokens verified:   29
+Unique tokens unverified: 0
+
+PORTFOLIO
+Starting Cash:   $100.00
+Available Cash:  $98.31
+Invested:        $0.00
+Realized P&L:    $+0.0000
+Unrealized P&L:  $+0.0000
+Total Equity:    $98.31
+
+TRADING
+Paper Buys:     0
+Paper Sells:    0
+Winning Trades: 0
+Losing Trades:  0
+Win Rate:       0.0%
+
+FEES
+DEX Fees:      $0.0000
+Network Fees:  $0.0000
+Priority Fees: $0.0000
+Slippage:      $0.0000
+
+BEST TRADE:  None
+WORST TRADE: None
+
+===========================================================================
+OPEN POSITIONS
+===========================================================================
+Открытых позиций нет.
+
+===========================================================================
+CLOSED POSITIONS
+===========================================================================
+Закрытых позиций нет.
+
+===========================================================================
+MONITORING (Кандидаты после 5м карантина)
+===========================================================================
+TOKEN      | SCORE  | PRICE FROM P0   | SECURITY            | LIQUIDITY   | BLOCK REASON
+------------------------------------------------------------------------------------------
+milk       | 15.5   | -63.6%          | VERIFIED            | PASS        | Liquidity data unavailable
+ANSEMSTACY | 26.5   | -97.0%          | VERIFIED            | $2656       | Stale/dead trading activity
+Pussies    | 12.5   | -16.9%          | VERIFIED            | PASS        | Liquidity data unavailable
+gayonfone  | 22.5   | -91.7%          | VERIFIED            | $2504       | Stale/dead trading activity
+신디         | 12.5   | +0.2%           | VERIFIED            | PASS        | Liquidity data unavailable
+MICRODUCK  | 28.5   | +4.3%           | VERIFIED            | $10117      | Stale/dead trading activity
+AGAME      | 24.5   | -25.5%          | VERIFIED            | PASS        | Liquidity data unavailable
+SON        | 25.5   | -33.7%          | VERIFIED            | $4526       | Low composite score (25.5 < 40.0)
+FONE       | 12.5   | -3.0%           | VERIFIED            | PASS        | Liquidity data unavailable
+MiniBlue   | 24.5   | -9.8%           | VERIFIED            | PASS        | Liquidity data unavailable
+Gosha      | 35.2   | -9.0%           | VERIFIED            | PASS        | Liquidity data unavailable
+Liberty    | 15.5   | -59.3%          | VERIFIED            | PASS        | Liquidity data unavailable
+Fagottino  | 15.5   | -62.5%          | VERIFIED            | PASS        | Liquidity data unavailable
+stonkape   | 81.2   | +121.6%         | VERIFIED            | $50579      | Candidate threshold met (81.2 >= 70.0)
+NOBODY     | 22.0   | -78.7%          | VERIFIED            | $4756       | Low composite score (22.0 < 40.0)
+Popsem     | 73.8   | -8.6%           | VERIFIED            | $30997      | Candidate threshold met (73.8 >= 70.0)
+MC         | 12.5   | -73.2%          | VERIFIED            | PASS        | Liquidity data unavailable
+pump       | 22.5   | -32.8%          | VERIFIED            | PASS        | Liquidity data unavailable
+anxiety    | 18.5   | -42.6%          | VERIFIED            | PASS        | Liquidity data unavailable
+goldinu    | 26.5   | -96.2%          | VERIFIED            | $2361       | Stale/dead trading activity
+
+===========================================================================
+STRATEGY ANALYTICS
+===========================================================================
+Average entry score:           0.0
+Average price growth at entry: +0.0%
+Average holding time:          0.0 min
+Average P&L:                   $+0.0000
+Median P&L:                    $+0.0000
+Maximum drawdown:              +0.0%
+Maximum gain:                  +0.0%
+===========================================================================

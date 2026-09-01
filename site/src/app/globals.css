@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-beige-0: #F5F0E6;
+  --color-paper: #FBF8F1;
+  --color-ink: #1B1712;
+  --color-ink-soft: #4A443B;
+  --color-ink-faint: #8C8375;
+  --color-rule: #D8CDB6;
+  --color-rust: #9A3F2E;
+  --color-olive: #4E5A34;
+  --color-ochre: #A87C2E;
+
+  /* Typography */
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  /* Constraints */
+  --radius-sm: 2px;
+  --radius-md: 2px;
+  --radius-lg: 2px;
+  --radius-xl: 2px;
+  --radius-2xl: 2px;
+  --radius-3xl: 2px;
+
+  /* Overrides for no shadows */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-xl: none;
+  --shadow-2xl: none;
+  --shadow-inner: none;
+}
+
+@layer base {
+  :root {
+    --beige-0: #F5F0E6;
+    --paper: #FBF8F1;
+    --ink: #1B1712;
+    --ink-soft: #4A443B;
+    --ink-faint: #8C8375;
+    --rule: #D8CDB6;
+    --rust: #9A3F2E;
+    --olive: #4E5A34;
+    --ochre: #A87C2E;
+  }
+  
+  html, body {
+    background-color: var(--beige-0);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Strictly no shadows */
+  * {
+    box-shadow: none !important;
+  }
+}
+
+/* Radar rings effect */
+@layer utilities {
+  .radar-ring {
+    position: absolute;
+    border: 1px solid var(--rule);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+}

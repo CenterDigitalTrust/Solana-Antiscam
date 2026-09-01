@@ -1,0 +1,81 @@
+===========================================================================
+SOLANA MEME PAPER TRADING REPORT
+===========================================================================
+
+PERIOD
+Start: 2026-08-16 14:49:44 UTC
+End:   2026-08-16 15:20:21 UTC
+
+SCANNER
+Expected cycles: 180
+Started:         37
+Completed:       37
+Failed:          0
+
+TOKENS
+Discovered:       49
+Analyzed:         49
+Quarantine:       2
+Monitoring:       47
+Ready:            0
+Open:             0
+Closed:           0
+Rejected:         0
+Security blocked: 0
+Expired:          0
+
+SECURITY
+Checks performed:         0
+Unique tokens verified:   0
+Unique tokens unverified: 0
+
+PORTFOLIO
+Starting Cash:   $100.00
+Available Cash:  $100.00
+Invested:        $0.00
+Realized P&L:    $+0.0000
+Unrealized P&L:  $+0.0000
+Total Equity:    $100.00
+
+TRADING
+Paper Buys:     0
+Paper Sells:    0
+Winning Trades: 0
+Losing Trades:  0
+Win Rate:       0.0%
+
+FEES
+DEX Fees:      $0.0000
+Network Fees:  $0.0000
+Priority Fees: $0.0000
+Slippage:      $0.0000
+
+BEST TRADE:  None
+WORST TRADE: None
+
+===========================================================================
+OPEN POSITIONS
+===========================================================================
+Открытых позиций нет.
+
+===========================================================================
+CLOSED POSITIONS
+===========================================================================
+Закрытых позиций нет.
+
+===========================================================================
+MONITORING (Кандидаты после 5м карантина)
+===========================================================================
+В активном мониторинге токенов нет.
+
+===========================================================================
+STRATEGY ANALYTICS
+===========================================================================
+Average entry score:           0.0
+Average price growth at entry: +0.0%
+Average holding time:          0.0 min
+Average P&L:                   $+0.0000
+Median P&L:                    $+0.0000
+Maximum drawdown:              +0.0%
+Maximum gain:                  +0.0%
+===========================================================================

@@ -1,0 +1,76 @@
+{
+  "Header": {},
+  "Hero": {
+    "eyebrow": "AUTONOMOUS ON-CHAIN AUDIT · CENTER FOR DIGITAL TRUST",
+    "h1_part1": "Verify first.",
+    "h1_part2": "Never buy",
+    "h1_italic": "blind.",
+    "subtitle": "PATROL scans Solana every ten seconds, audits every new token on-chain, and publishes a verdict in the live feed before you've had time to click buy. Non-custodial by design — it never holds funds and never issues a buy or sell signal.",
+    "input_placeholder": "Paste a token address to check it now →",
+    "btn_check": "CHECK TOKEN",
+    "input_note": "NO WALLET CONNECTION · NO CUSTODY · NO TRADING SIGNALS — EVER",
+    "stats_card_1": "of tokens launched on Pump.fun are rug pulls or pump-and-dumps.",
+    "stats_card_2": "lost across three Solana DEXs in six months.",
+    "stats_source": "SOURCE — SOLIDUS LABS (2025); INDEPENDENT ACADEMIC STUDY (2026)"
+  },
+  "Stats": {
+    "scanned": "Tokens scanned today",
+    "rejected": "Rejected & quarantined",
+    "passed": "Passed audit",
+    "footer_note": "METHODOLOGY BELOW — EVERY DECISION IS LOGGED TO THE PUBLIC ARCHIVE"
+  },
+  "Methodology": {
+    "title": "How the score is built",
+    "subtitle": "0–100 points across six weighted checks, recomputed continuously as each token trades. Nothing here is a black box.",
+    "security": {
+      "title": "Security",
+      "desc": "Has the creator renounced mint authority? Do the top 10 wallets hold under 30–40% of supply? Is liquidity locked or burned? Serious red flags cut this score to near zero."
+    },
+    "liquidity": {
+      "title": "Liquidity",
+      "desc": "Can you actually sell? Pools under $1,000 score zero. Pools growing steadily toward $10,000–$30,000 score highest."
+    },
+    "momentum": {
+      "title": "Momentum",
+      "desc": "Buy and sell volume over the last five minutes, and the ratio of buyers to sellers. Broad, one-sided buying scores highest."
+    },
+    "market": {
+      "title": "Market",
+      "desc": "Trading volume and market-cap sanity checks — over $5,000 traded in five minutes scores 85–100%; zero volume scores 10%. Flags caps that dwarf real liquidity."
+    },
+    "wallet": {
+      "title": "Wallet",
+      "desc": "Has the creator already sold or emptied their wallet? Locking in profit early reads as a signal against a future rug pull, not against it."
+    },
+    "data": {
+      "title": "Data quality",
+      "desc": "A penalty for gaps in source data — for example, holder counts DexScreener couldn't return. Unknown risk is still risk."
+    }
+  },
+  "Monitoring": {
+    "title": "Every token, the moment it's discovered",
+    "subtitle": "No request required. PATROL finds it first — you just watch the ticker."
+  },
+  "Growth": {
+    "title": "Passed audit. Up 50%+ from T0.",
+    "subtitle": "Tokens move here automatically the instant they cross +50% from discovery — proof the filter isn't just theoretical."
+  },
+  "Quarantine": {
+    "title": "Every rejection, stamped with its reason",
+    "subtitle": "Nothing is hidden after the fact. The public archive of what PATROL turned away, and why."
+  },
+  "About": {
+    "desc_1": "PATROL is built and maintained by the <strong>Center for Digital Trust</strong>, a Ukrainian non-profit working to make trust verifiable rather than declared. It's the organization's second initiative alongside MD System, an evidentiary integrity platform for public institutions — both share one principle: transparent, non-custodial, on-chain verification, with no single point of failure and no authority to edit the record.",
+    "desc_2": "An open, public API for wallets and DEX aggregators is planned as the next phase — so any project in the ecosystem can carry the same security score, without building an audit pipeline of its own.",
+    "p_1": "Open source",
+    "p_2": "Non-custodial",
+    "p_3": "No trading signals",
+    "p_4": "Public archive of every decision",
+    "org_name": "Center for Digital Trust — NGO, Ukraine",
+    "org_network": "Solana (core built to extend to other chains)",
+    "org_status": "Paper-trading engine live · public web release in progress"
+  },
+  "Footer": {
+    "description": "An open, non-custodial security layer for the Solana ecosystem. Free to use, free to audit, built in public."
+  }
+}

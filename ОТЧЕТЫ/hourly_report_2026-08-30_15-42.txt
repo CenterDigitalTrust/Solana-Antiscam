@@ -1,0 +1,105 @@
+===========================================================================
+SOLANA MEME PAPER TRADING REPORT
+===========================================================================
+
+PERIOD
+Start: 2026-08-30 15:10:27 UTC
+End:   2026-08-30 15:42:09 UTC
+
+SCANNER
+Expected cycles: 180
+Started:         10
+Completed:       10
+Failed:          0
+
+TOKENS
+Discovered:       84
+Analyzed:         84
+Quarantine:       0
+Monitoring:       80
+Ready:            0
+Open:             0
+Closed:           2
+Rejected:         0
+Security blocked: 0
+Expired:          0
+
+SECURITY
+Checks performed:         768
+Unique tokens verified:   81
+Unique tokens unverified: 0
+
+PORTFOLIO
+Starting Cash:   $100.00
+Available Cash:  $99.19
+Invested:        $0.00
+Realized P&L:    $-0.4226
+Unrealized P&L:  $+0.0000
+Total Equity:    $99.19
+
+TRADING
+Paper Buys:     2
+Paper Sells:    2
+Winning Trades: 1
+Losing Trades:  1
+Win Rate:       50.0%
+
+FEES
+DEX Fees:      $0.0400
+Network Fees:  $0.0016
+Priority Fees: $0.0160
+Slippage:      $0.0400
+
+BEST TRADE:  GROKOPOLD (+23.9%, $+0.4807)
+WORST TRADE: GROKOPOLD (-45.0%, $-0.9032)
+
+===========================================================================
+OPEN POSITIONS
+===========================================================================
+Открытых позиций нет.
+
+===========================================================================
+CLOSED POSITIONS
+===========================================================================
+TOKEN      | ENTRY       | EXIT        | P&L $      | P&L %     | EXIT REASON        | HOLD TIME
+------------------------------------------------------------------------------------------
+GROKOPOLD  | $0.000133   | $0.000075   | -0.9032$ | -44.96% | TRAILING_STOP      | 0.0m
+GROKOPOLD  | $0.000076   | $0.000096   | +0.4807$ | +23.93% | TRAILING_STOP      | 1.9m
+
+===========================================================================
+MONITORING (Кандидаты после 5м карантина)
+===========================================================================
+TOKEN      | SCORE  | PRICE FROM P0   | SECURITY            | LIQUIDITY   | BLOCK REASON
+------------------------------------------------------------------------------------------
+milk       | 12.5   | -61.2%          | VERIFIED            | PASS        | Liquidity data unavailable
+ANSEMSTACY | 24.5   | -97.7%          | VERIFIED            | $2102       | Stale/dead trading activity
+Pussies    | 12.5   | -16.3%          | VERIFIED            | PASS        | Liquidity data unavailable
+gayonfone  | 22.5   | -91.8%          | VERIFIED            | $2480       | Stale/dead trading activity
+신디         | 12.5   | +9.3%           | VERIFIED            | PASS        | Liquidity data unavailable
+MICRODUCK  | 31.0   | +36.2%          | VERIFIED            | $12267      | Stale/dead trading activity
+AGAME      | 40.8   | +4.3%           | VERIFIED            | $15535      | Stale/dead trading activity
+SON        | 19.5   | -54.6%          | VERIFIED            | $3428       | Stale/dead trading activity
+FONE       | 12.5   | -12.1%          | VERIFIED            | PASS        | Liquidity data unavailable
+MiniBlue   | 12.5   | -10.6%          | VERIFIED            | PASS        | Liquidity data unavailable
+Gosha      | 27.5   | -57.5%          | VERIFIED            | PASS        | Liquidity data unavailable
+Liberty    | 15.5   | -55.5%          | VERIFIED            | PASS        | Liquidity data unavailable
+Fagottino  | 12.5   | -60.1%          | VERIFIED            | PASS        | Liquidity data unavailable
+NOBODY     | 19.5   | -86.6%          | VERIFIED            | $3403       | Stale/dead trading activity
+Popsem     | 19.5   | -98.6%          | VERIFIED            | $2194       | Stale/dead trading activity
+MC         | 12.5   | -73.5%          | VERIFIED            | PASS        | Liquidity data unavailable
+pump       | 12.5   | -32.8%          | VERIFIED            | PASS        | Liquidity data unavailable
+anxiety    | 12.5   | -45.1%          | VERIFIED            | PASS        | Liquidity data unavailable
+goldinu    | 26.5   | -96.3%          | VERIFIED            | $2342       | Stale/dead trading activity
+PoodleMan  | 12.5   | -27.0%          | VERIFIED            | PASS        | Liquidity data unavailable
+
+===========================================================================
+STRATEGY ANALYTICS
+===========================================================================
+Average entry score:           75.6
+Average price growth at entry: +314.4%
+Average holding time:          1.0 min
+Average P&L:                   $-0.2113
+Median P&L:                    $+0.4807
+Maximum drawdown:              -43.6%
+Maximum gain:                  +73.1%
+===========================================================================

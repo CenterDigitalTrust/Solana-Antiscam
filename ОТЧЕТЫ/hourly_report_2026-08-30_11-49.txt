@@ -1,0 +1,109 @@
+===========================================================================
+SOLANA MEME PAPER TRADING REPORT
+===========================================================================
+
+PERIOD
+Start: 2026-08-30 11:18:49 UTC
+End:   2026-08-30 11:49:28 UTC
+
+SCANNER
+Expected cycles: 180
+Started:         40
+Completed:       40
+Failed:          0
+
+TOKENS
+Discovered:       22
+Analyzed:         22
+Quarantine:       0
+Monitoring:       22
+Ready:            0
+Open:             0
+Closed:           6
+Rejected:         0
+Security blocked: 0
+Expired:          0
+
+SECURITY
+Checks performed:         657
+Unique tokens verified:   22
+Unique tokens unverified: 0
+
+PORTFOLIO
+Starting Cash:   $100.00
+Available Cash:  $98.31
+Invested:        $0.00
+Realized P&L:    $-1.6905
+Unrealized P&L:  $+0.0000
+Total Equity:    $98.31
+
+TRADING
+Paper Buys:     6
+Paper Sells:    6
+Winning Trades: 1
+Losing Trades:  5
+Win Rate:       16.7%
+
+FEES
+DEX Fees:      $0.0300
+Network Fees:  $0.0048
+Priority Fees: $0.0480
+Slippage:      $0.1200
+
+BEST TRADE:  NOBODY (+48.9%, $+0.9827)
+WORST TRADE: NOBODY (-39.8%, $-0.8004)
+
+===========================================================================
+OPEN POSITIONS
+===========================================================================
+Открытых позиций нет.
+
+===========================================================================
+CLOSED POSITIONS
+===========================================================================
+TOKEN      | ENTRY       | EXIT        | P&L $      | P&L %     | EXIT REASON        | HOLD TIME
+------------------------------------------------------------------------------------------
+NOBODY     | $0.000145   | $0.000089   | -0.8004$ | -39.84% | TRAILING_STOP      | 0.8m
+NOBODY     | $0.000133   | $0.000110   | -0.3714$ | -18.49% | TRAILING_STOP      | 3.2m
+NOBODY     | $0.000177   | $0.000129   | -0.5700$ | -28.38% | TRAILING_STOP      | 0.0m
+NOBODY     | $0.000154   | $0.000129   | -0.3531$ | -17.58% | TRAILING_STOP      | 2.0m
+NOBODY     | $0.000197   | $0.000143   | -0.5784$ | -28.79% | TRAILING_STOP      | 0.0m
+NOBODY     | $0.000095   | $0.000143   | +0.9827$ | +48.92% | TRAILING_STOP      | 2.8m
+
+===========================================================================
+MONITORING (Кандидаты после 5м карантина)
+===========================================================================
+TOKEN      | SCORE  | PRICE FROM P0   | SECURITY            | LIQUIDITY   | BLOCK REASON
+------------------------------------------------------------------------------------------
+milk       | 24.5   | -51.7%          | VERIFIED            | PASS        | Liquidity data unavailable
+ANSEMSTACY | 26.5   | -97.0%          | VERIFIED            | $2640       | Stale/dead trading activity
+Pussies    | 12.5   | -16.9%          | VERIFIED            | PASS        | Liquidity data unavailable
+gayonfone  | 45.2   | -83.7%          | VERIFIED            | $4240       | Monitoring in progress (45.2)
+신디         | 15.5   | +0.3%           | VERIFIED            | PASS        | Liquidity data unavailable
+MICRODUCK  | 28.5   | +6.9%           | VERIFIED            | $10298      | Stale/dead trading activity
+AGAME      | 24.5   | -17.3%          | VERIFIED            | PASS        | Liquidity data unavailable
+SON        | 41.2   | +7.2%           | VERIFIED            | $6241       | Monitoring in progress (41.2)
+FONE       | 12.5   | -1.3%           | VERIFIED            | PASS        | Liquidity data unavailable
+MiniBlue   | 28.5   | +64.4%          | VERIFIED            | PASS        | Liquidity data unavailable
+Gosha      | 25.2   | -41.7%          | VERIFIED            | PASS        | Liquidity data unavailable
+Liberty    | 15.5   | -72.5%          | VERIFIED            | PASS        | Liquidity data unavailable
+Fagottino  | 15.5   | -61.8%          | VERIFIED            | PASS        | Liquidity data unavailable
+stonkape   | 81.2   | +39.6%          | VERIFIED            | $39273      | Candidate threshold met (81.2 >= 70.0)
+NOBODY     | 64.8   | +187.9%         | VERIFIED            | $22355      | Monitoring in progress (64.8)
+Popsem     | 71.0   | -7.0%           | VERIFIED            | $31091      | Candidate threshold met (71.0 >= 70.0)
+MC         | 22.5   | -69.1%          | VERIFIED            | PASS        | Liquidity data unavailable
+pump       | 24.5   | -3.0%           | VERIFIED            | PASS        | Liquidity data unavailable
+anxiety    | 35.2   | +1.3%           | VERIFIED            | PASS        | Liquidity data unavailable
+goldinu    | 40.8   | -95.1%          | VERIFIED            | $2930       | Monitoring in progress (40.8)
+
+===========================================================================
+STRATEGY ANALYTICS
+===========================================================================
+Average entry score:           74.2
+Average price growth at entry: +490.4%
+Average holding time:          1.5 min
+Average P&L:                   $-0.2818
+Median P&L:                    $-0.3714
+Maximum drawdown:              -38.8%
+Maximum gain:                  +118.3%
+===========================================================================

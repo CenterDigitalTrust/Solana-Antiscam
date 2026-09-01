@@ -1,0 +1,36 @@
+{
+    "dataset_name": "SolRPDS",
+    "total_records": 116304,
+    "total_unique_pools": 63520,
+    "date_min": "2021-02-14 21:09:21",
+    "date_max": "2024-10-31 23:41:11",
+    "rug_pools_total": 22555,
+    "benign_pools_total": 93749,
+    "rug_rate_overall_pct": 19.39,
+    "splits": {
+        "train": {
+            "epoch": "2021-02-14 to 2023-12-31",
+            "records": 20872,
+            "unique_pools": 9563,
+            "rug_count": 3481,
+            "benign_count": 17391,
+            "rug_rate_pct": 16.68
+        },
+        "validation": {
+            "epoch": "2024-01-01 to 2024-06-30 (Q1-Q2 2024)",
+            "records": 56937,
+            "unique_pools": 32267,
+            "rug_count": 12778,
+            "benign_count": 44159,
+            "rug_rate_pct": 22.44
+        },
+        "test": {
+            "epoch": "2024-07-01 to 2024-11-01 (Q3-Q4 2024 Out-Of-Time)",
+            "records": 38495,
+            "unique_pools": 23742,
+            "rug_count": 6296,
+            "benign_count": 32199,
+            "rug_rate_pct": 16.36
+        }
+    }
+}

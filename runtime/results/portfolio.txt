@@ -1,0 +1,20 @@
+SOLANA MEME PAPER PORTFOLIO
+
+Initial Capital:   $100.00
+Available Cash:    $99.55
+Invested:          $0.00
+Open Positions:    0 / 50
+
+Realized P&L:      $-0.4533
+Unrealized P&L:    $+0.0000
+Total Equity:      $99.55
+
+Fees:              $0.3546
+Slippage:          $0.3400
+
+Wins:              5
+Losses:            12
+Win Rate:          29.4%
+
+Last Update:
+2026-09-01 14:20:56 UTC

@@ -1,0 +1,76 @@
+{
+  "Header": {},
+  "Hero": {
+    "eyebrow": "AUDITORÍA EN CADENA AUTÓNOMA · CENTER FOR DIGITAL TRUST",
+    "h1_part1": "Verifica primero.",
+    "h1_part2": "Nunca compres",
+    "h1_italic": "a ciegas.",
+    "subtitle": "PATROL escanea Solana cada diez segundos, audita cada nuevo token en la cadena y publica un veredicto en tiempo real antes de que tengas tiempo de hacer clic en comprar. Diseño no privativo de libertad: nunca retiene fondos ni emite señales de compra o venta.",
+    "input_placeholder": "Pega una dirección de token para verificarla ahora →",
+    "btn_check": "VERIFICAR TOKEN",
+    "input_note": "SIN CONEXIÓN DE BILLETERA · SIN CUSTODIA · SIN SEÑALES DE COMERCIO — NUNCA",
+    "stats_card_1": "de los tokens lanzados en Pump.fun son estafas o esquemas de inflar y desechar.",
+    "stats_card_2": "perdidos en tres DEX de Solana en seis meses.",
+    "stats_source": "FUENTE — SOLIDUS LABS (2025); ESTUDIO ACADÉMICO INDEPENDIENTE (2026)"
+  },
+  "Stats": {
+    "scanned": "Tokens escaneados hoy",
+    "rejected": "Rechazados y en cuarentena",
+    "passed": "Auditoría superada",
+    "footer_note": "METODOLOGÍA A CONTINUACIÓN — CADA DECISIÓN SE REGISTRA EN EL ARCHIVO PÚBLICO"
+  },
+  "Methodology": {
+    "title": "Cómo se construye la puntuación",
+    "subtitle": "De 0 a 100 puntos en seis controles ponderados, recalculados continuamente. Aquí nada es una caja negra.",
+    "security": {
+      "title": "Seguridad",
+      "desc": "¿El creador ha renunciado a la autoridad de acuñación? ¿Las 10 principales billeteras tienen menos del 30-40% del suministro? ¿La liquidez está bloqueada o quemada? Las señales de alerta graves reducen esta puntuación a casi cero."
+    },
+    "liquidity": {
+      "title": "Liquidez",
+      "desc": "¿Puedes vender realmente? Los grupos por debajo de $1,000 obtienen cero. Los grupos que crecen constantemente hacia $10,000–$30,000 obtienen la puntuación más alta."
+    },
+    "momentum": {
+      "title": "Impulso",
+      "desc": "Volumen de compra y venta en los últimos cinco minutos, y la relación entre compradores y vendedores. Las compras unilaterales masivas obtienen la puntuación más alta."
+    },
+    "market": {
+      "title": "Mercado",
+      "desc": "Controles de cordura de volumen de operaciones y capitalización de mercado: más de $5,000 negociados en cinco minutos obtienen un 85-100%; el volumen cero obtiene un 10%."
+    },
+    "wallet": {
+      "title": "Billetera",
+      "desc": "¿El creador ya ha vendido o vaciado su billetera? Asegurar las ganancias anticipadamente se lee como una señal en contra de un futuro rug pull, no en contra."
+    },
+    "data": {
+      "title": "Calidad de los datos",
+      "desc": "Una penalización por lagunas en los datos de origen, por ejemplo, el recuento de titulares que DexScreener no pudo devolver. El riesgo desconocido sigue siendo riesgo."
+    }
+  },
+  "Monitoring": {
+    "title": "Cada token, en el momento en que se descubre",
+    "subtitle": "No se requiere solicitud. PATROL lo encuentra primero: tú solo miras la fuente de datos."
+  },
+  "Growth": {
+    "title": "Auditoría superada. Más de 50% desde T0.",
+    "subtitle": "Los tokens se mueven aquí automáticamente en el instante en que cruzan el +50% desde el descubrimiento: una prueba de que el filtro no es solo teórico."
+  },
+  "Quarantine": {
+    "title": "Cada rechazo, sellado con su razón",
+    "subtitle": "Nada se oculta después del hecho. El archivo público de lo que PATROL rechazó, y por qué."
+  },
+  "About": {
+    "desc_1": "PATROL está construido y mantenido por el <strong>Center for Digital Trust</strong>, una organización sin fines de lucro ucraniana que trabaja para hacer que la confianza sea verificable en lugar de declarada. Es la segunda iniciativa de la organización junto con MD System, ambos comparten un principio: verificación en cadena transparente y sin custodia, sin un único punto de falla y sin autoridad para editar el registro.",
+    "desc_2": "Se planea una API pública abierta para billeteras y agregadores DEX como la siguiente fase, para que cualquier proyecto en el ecosistema pueda llevar el mismo puntaje de seguridad, sin construir un canal de auditoría propio.",
+    "p_1": "Código abierto",
+    "p_2": "Sin custodia",
+    "p_3": "Sin señales comerciales",
+    "p_4": "Archivo público de cada decisión",
+    "org_name": "Center for Digital Trust — ONG, Ucrania",
+    "org_network": "Solana (núcleo construido para extenderse a otras cadenas)",
+    "org_status": "Motor de paper-trading activo · lanzamiento web público en progreso"
+  },
+  "Footer": {
+    "description": "Una capa de seguridad abierta y sin custodia para el ecosistema de Solana. De uso gratuito, de auditoría gratuita, construido en público."
+  }
+}

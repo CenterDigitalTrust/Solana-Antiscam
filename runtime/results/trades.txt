@@ -1,0 +1,310 @@
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 11:31:44 UTC
+Token:       NOBODY
+Address:     6vbszXA5HfXJ1Bv2gjgXjwstUMs3mLw8tKtdBF7Cpump
+
+Investment:  $2.00
+Entry Price: $0.000095
+Score:       71.0
+Growth @ In: +271.6%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 11:34:49 UTC
+Token:       NOBODY
+Address:     6vbszXA5HfXJ1Bv2gjgXjwstUMs3mLw8tKtdBF7Cpump
+
+Investment:  $2.00
+Entry Price: $0.000197
+Score:       73.0
+Growth @ In: +674.7%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER SELL
+
+Time:        2026-08-30 11:34:50 UTC
+Token:       NOBODY
+
+Investment:  $2.00
+Entry:       $0.000197
+Peak:        $0.000197
+Exit:        $0.000143
+
+Gross P&L:   $-0.5572
+NET P&L:     $-0.5784
+Return:      -28.79%
+Hold Time:   0.0 min
+Exit Reason: TRAILING_STOP
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 11:35:42 UTC
+Token:       NOBODY
+Address:     6vbszXA5HfXJ1Bv2gjgXjwstUMs3mLw8tKtdBF7Cpump
+
+Investment:  $2.00
+Entry Price: $0.000154
+Score:       73.0
+Growth @ In: +506.5%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 11:37:59 UTC
+Token:       NOBODY
+Address:     6vbszXA5HfXJ1Bv2gjgXjwstUMs3mLw8tKtdBF7Cpump
+
+Investment:  $2.00
+Entry Price: $0.000177
+Score:       76.0
+Growth @ In: +597.4%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER SELL
+
+Time:        2026-08-30 11:38:01 UTC
+Token:       NOBODY
+
+Investment:  $2.00
+Entry:       $0.000177
+Peak:        $0.000177
+Exit:        $0.000129
+
+Gross P&L:   $-0.5488
+NET P&L:     $-0.5700
+Return:      -28.38%
+Hold Time:   0.0 min
+Exit Reason: TRAILING_STOP
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 11:39:01 UTC
+Token:       NOBODY
+Address:     6vbszXA5HfXJ1Bv2gjgXjwstUMs3mLw8tKtdBF7Cpump
+
+Investment:  $2.00
+Entry Price: $0.000133
+Score:       76.0
+Growth @ In: +421.5%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 11:42:28 UTC
+Token:       NOBODY
+Address:     6vbszXA5HfXJ1Bv2gjgXjwstUMs3mLw8tKtdBF7Cpump
+
+Investment:  $2.00
+Entry Price: $0.000145
+Score:       76.0
+Growth @ In: +470.8%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 12:45:09 UTC
+Token:       stonkape
+Address:     tbhtBAwZ4B7H6J3tjUCNq7rtUdq8LP36Wq38N2Upump
+
+Investment:  $2.00
+Entry Price: $0.000454
+Score:       81.2
+Growth @ In: +189.7%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 12:50:15 UTC
+Token:       COT
+Address:     8KAPV5bS26u6kvQ4S8o6Fef8Wh7u5iqJWXWyTgzPpump
+
+Investment:  $2.00
+Entry Price: $0.000113
+Score:       77.0
+Growth @ In: +584.4%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 13:43:58 UTC
+Token:       AgentChat
+Address:     V8PhT3fK5GhjSz2Zk2sMFqmcTx8xdQJBSYBJm7opump
+
+Investment:  $2.00
+Entry Price: $0.000108
+Score:       71.0
+Growth @ In: +231.7%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 14:27:25 UTC
+Token:       QSB
+Address:     5FEcpNRUdmJ2if3baLXk1qzasCiXvPcHwu24Ar3gcQsL
+
+Investment:  $2.00
+Entry Price: $0.000076
+Score:       74.8
+Growth @ In: +370.8%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 14:29:43 UTC
+Token:       QSB
+Address:     5FEcpNRUdmJ2if3baLXk1qzasCiXvPcHwu24Ar3gcQsL
+
+Investment:  $2.00
+Entry Price: $0.000089
+Score:       71.8
+Growth @ In: +453.0%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 14:39:35 UTC
+Token:       QSB
+Address:     5FEcpNRUdmJ2if3baLXk1qzasCiXvPcHwu24Ar3gcQsL
+
+Investment:  $2.00
+Entry Price: $0.000167
+Score:       73.8
+Growth @ In: +935.1%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER SELL
+
+Time:        2026-08-30 14:39:35 UTC
+Token:       QSB
+
+Investment:  $2.00
+Entry:       $0.000167
+Peak:        $0.000167
+Exit:        $0.000082
+
+Gross P&L:   $-1.0280
+NET P&L:     $-1.0480
+Return:      -52.17%
+Hold Time:   0.0 min
+Exit Reason: TRAILING_STOP
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 14:42:26 UTC
+Token:       QSB
+Address:     5FEcpNRUdmJ2if3baLXk1qzasCiXvPcHwu24Ar3gcQsL
+
+Investment:  $2.00
+Entry Price: $0.000080
+Score:       77.0
+Growth @ In: +398.4%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 15:38:32 UTC
+Token:       GROKOPOLD
+Address:     8PNqCk1ozAs58ghT9fyNKwjgrmSYvb2FysLiMY4ugrok
+
+Investment:  $2.00
+Entry Price: $0.000076
+Score:       79.2
+Growth @ In: +201.5%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 15:42:06 UTC
+Token:       GROKOPOLD
+Address:     8PNqCk1ozAs58ghT9fyNKwjgrmSYvb2FysLiMY4ugrok
+
+Investment:  $2.00
+Entry Price: $0.000133
+Score:       72.0
+Growth @ In: +427.3%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER SELL
+
+Time:        2026-08-30 15:42:07 UTC
+Token:       GROKOPOLD
+
+Investment:  $2.00
+Entry:       $0.000133
+Peak:        $0.000133
+Exit:        $0.000075
+
+Gross P&L:   $-0.8828
+NET P&L:     $-0.9032
+Return:      -44.96%
+Hold Time:   0.0 min
+Exit Reason: TRAILING_STOP
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 15:52:29 UTC
+Token:       QUACKD
+Address:     GMogeMjrWFaEceasCPathoibjAh8qwhTC3Chw4Bfpump
+
+Investment:  $2.00
+Entry Price: $0.000114
+Score:       71.2
+Growth @ In: +182.8%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
+--------------------------------------------------
+PAPER BUY
+
+Time:        2026-08-30 16:03:30 UTC
+Token:       MILCOW
+Address:     JD5eC8WycYe4mkS6h145DfmDLPsKuoRYpbB3BNNEpump
+
+Investment:  $2.00
+Entry Price: $0.000237
+Score:       82.8
+Growth @ In: +175.7%
+Reason:      ENTRY_CONFIRMED (Score>=70 & Price>=+50% & Security Verified)
+--------------------------------------------------
+
