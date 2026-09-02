@@ -8,7 +8,7 @@ PATROL (Digital Trust Center) is an autonomous, non-financial analytical daemon 
 
 ## High-Level Architecture (Mermaid)
 
-\\mermaid
+`mermaid
 flowchart TD
     %% Define Styles
     classDef frontend fill:#1a1a1a,stroke:#333,stroke-width:2px,color:#fff;
@@ -64,12 +64,13 @@ flowchart TD
     
     H -->|Realtime Sub| K
     I -->|Realtime Sub| K
-\
+`
+
 ---
 
 ## Repository Structure
 
-\\	ext
+`	ext
 PATROL/
 ├── site/                     # Next.js 14 Frontend (React, Tailwind, Supabase JS)
 │   ├── src/components/       # UI Components (GrowthTable, StatsBar, etc.)
@@ -81,13 +82,14 @@ PATROL/
 ├── quarantine/               # Delay buffers for initial screening
 ├── simulation/               # Virtual paper trading engine
 └── main.py                   # Main Daemon Entrypoint
-\
+`
+
 ---
 
 ## Deployment Strategy
 
 1. **GitHub Repository**: The entire mono-repo (Frontend + Backend) resides on GitHub.
-2. **Azure Static Web Apps (SWA)**: Connected directly to the \site/\ folder in this GitHub repository. Automatically builds the Next.js app and provisions the edge network and CDN when code is pushed to \main\.
+2. **Azure Static Web Apps (SWA)**: Connected directly to the site/ folder in this GitHub repository. Automatically builds the Next.js app and provisions the edge network and CDN when code is pushed to main.
 3. **Supabase**: Managed PostgreSQL database providing Realtime channels for the Next.js frontend, preventing the need for an intermediate WebSocket server.
 4. **Azure VMs / Container Instances**: The Python daemon runs 24/7 as a background worker, pushing updates directly to Supabase via secure service-role keys.
 
@@ -95,7 +97,7 @@ PATROL/
 
 ## Development
 
-\\ash
+`ash
 # Start the Python analytical daemon (demo mode)
 python simulate_market.py
 
@@ -106,4 +108,4 @@ python main.py --daemon
 cd site
 npm install
 npm run dev
-\
+`
