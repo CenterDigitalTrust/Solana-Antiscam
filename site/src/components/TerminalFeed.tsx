@@ -45,18 +45,24 @@ export default function TerminalFeed() {
                 <th className="pb-2 font-normal">SCORE</th>
                 <th className="pb-2 font-normal">Δ PRICE</th>
                 <th className="pb-2 font-normal">STATUS</th>
+                <th className="pb-2 font-normal">TIME</th>
+                <th className="pb-2 font-normal">DATE</th>
               </tr>
             </thead>
             <tbody>
-              {tokens.map((token: any) => (
+              {tokens.map((token: any) => {
+                const dateObj = new Date(token.discovered_at);
+                return (
                 <tr key={token.token_address} className="border-b border-ink-soft/10">
                   <td className="py-2">${token.ticker}</td>
                   <td className="py-2 text-ink-faint">{formatAge(token.discovered_at)}</td>
                   <td className="py-2">{token.score}</td>
                   <td className="py-2">{formatPrice(token.price_usd)}</td>
                   <td className="py-2 uppercase">{formatStatus(token)}</td>
+                  <td className="py-2 text-ink-faint">{dateObj.toLocaleTimeString('ru-RU')}</td>
+                  <td className="py-2 text-ink-faint">{dateObj.toLocaleDateString('ru-RU')}</td>
                 </tr>
-              ))}
+              )})}
             </tbody>
           </table>
         </div>
