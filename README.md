@@ -17,7 +17,7 @@ flowchart TD
     classDef external fill:#4a4a4a,stroke:#666,stroke-width:2px,color:#fff;
     
     %% External Data Providers
-    subgraph External Sources
+    subgraph EXT [External Sources]
         direction LR
         A[DexScreener API]:::external
         B[Birdeye API]:::external
@@ -25,7 +25,7 @@ flowchart TD
     end
 
     %% Python Daemon (Backend)
-    subgraph Azure Container / Python Daemon
+    subgraph DAEMON [Azure Container / Python Daemon]
         direction TB
         D((Collector<br/>Engine)):::backend
         E[Quarantine<br/>Manager]:::backend
@@ -38,7 +38,7 @@ flowchart TD
     end
 
     %% Database (Supabase)
-    subgraph Supabase Cloud
+    subgraph DB [Supabase Cloud]
         direction TB
         H[(tokens)]:::db
         I[(daily_stats)]:::db
@@ -46,7 +46,7 @@ flowchart TD
     end
 
     %% Frontend (Next.js)
-    subgraph Azure Static Web Apps / Next.js
+    subgraph FRONTEND [Azure Static Web Apps / Next.js]
         direction TB
         K[React Client<br/>Dashboard]:::frontend
         L[Live Quaratine<br/>Feed]:::frontend
@@ -57,7 +57,7 @@ flowchart TD
     end
 
     %% Connections
-    External Sources -->|Raw Market Data| D
+    EXT -->|Raw Market Data| D
     G -->|Update Status & Prices| H
     G -->|Update PnL / Counters| I
     G -->|Audit Log| J
