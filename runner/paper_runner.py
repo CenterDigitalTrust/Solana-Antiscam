@@ -279,7 +279,7 @@ class AutonomousPaperRunner:
                     token.quarantine_score = score.total_score
 
                 # Evaluate Entry Conditions
-                score_ok = (score.total_score >= 70.0)
+                score_ok = (score.total_score is not None and score.total_score >= 70.0)
                 price_ok = (current_p >= (initial_p * 2.60))
                 security_ok = security.security_verified
                 liquidity_ok = (not liquidity.is_data_unavailable) and (snapshot.liquidity_usd and snapshot.liquidity_usd >= 1000.0)
