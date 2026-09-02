@@ -32,6 +32,9 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: "https://qfknvpozbzvzflhfjdte.supabase.co"
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFma252cG96Ynp2emZsaGZqZHRlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODgwMTc1MjMsImV4cCI6MjEwMzU5MzUyM30.riMUs9Y_fowD-WQ4mNPFvPNnVv_qMgdGHI2Qt0Clqas"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
