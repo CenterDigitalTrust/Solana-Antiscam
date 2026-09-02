@@ -1,11 +1,21 @@
 'use client';
+import { useState, useEffect } from 'react';
 import { useTokens } from '@/hooks/useTokens';
 
 export default function TerminalFeed() {
   const tokens = useTokens();
+  const [now, setNow] = useState(Date.now());
+
+  // Тикающий таймер для обновления возраста каждую секунду
+  useEffect(() => {
+    const interval = setInterval(() => setNow(Date.now()), 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   const formatAge = (discoveredAt: string) => {
-    const diff = Math.floor((Date.now() - new Date(discoveredAt).getTime()) / 1000);
+    if (!discoveredAt) return 'Unknown';
+    const diff = Math.floor((now - new Date(discoveredAt).getTime()) / 1000);
+    if (diff < 0) return 'Just now';
     if (diff < 60) return `${diff}s ago`;
     return `${Math.floor(diff / 60)}m ${diff % 60}s ago`;
   };
