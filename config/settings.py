@@ -20,7 +20,7 @@ class Settings:
         self._load_environment_files()
 
         # API Keys (Loaded safely, never printed)
-        self.HELIUS_API_KEY = self._resolve_var("HELIUS_API_KEY", ["helios_api_key", "HELIUS_KEY", "HELIUS"])
+        self.HELIUS_API_KEY = "820d8f7c-ec97-46f8-96f1-49344e0f092a"
         self.BIRDEYE_API_KEY = self._resolve_var("BIRDEYE_API_KEY", ["birdeye_api_key", "BIRDEYE_KEY", "BIRDEYE", "X_API_KEY"])
         self.JUPITER_API_KEY = self._resolve_var("JUPITER_API_KEY", ["jupiter_api_key", "JUPITER_KEY"])
 
