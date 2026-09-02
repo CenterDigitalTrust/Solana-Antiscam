@@ -294,8 +294,12 @@ class AutonomousPaperRunner:
                     decision_str = f"MONITORING (LIQUIDITY_RISK)"
                 elif not score_ok:
                     block_reason = EntryBlockReason.WAITING_FOR_SCORE
-                    decision_str = f"MONITORING (Score {score.total_score:.1f} < 70)"
-                    pass
+                    if score.total_score is None:
+                        decision_str = "MONITORING (Score is None)"
+                        import logging
+                        logging.getLogger("paper_runner").warning(f"Token {token.address}: score unavailable (None), skipping.")
+                    else:
+                        decision_str = f"MONITORING (Score {score.total_score:.1f} < 70)"
                 elif not price_ok:
                     block_reason = EntryBlockReason.WAITING_FOR_PRICE
                     decision_str = f"MONITORING ({price_growth_pct:+.1f}% < +160.0%)"
