@@ -40,3 +40,10 @@ data/
 .idea/
 *.swp
 ключи супа/
+!site/src/lib/
+  
+*.exe  
+*.spec  
+*.lnk  
+*.bat  
+.env 
