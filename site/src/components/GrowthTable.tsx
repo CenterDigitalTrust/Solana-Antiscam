@@ -16,20 +16,9 @@ export default function GrowthTable() {
     return { ...token, growthPct, currPrice };
   });
 
-  const todayStr = new Date().toDateString();
-  const getDailyScore = (address: string) => {
-    let hash = 0;
-    const str = address + todayStr;
-    for (let i = 0; i < str.length; i++) {
-      hash = (hash << 5) - hash + str.charCodeAt(i);
-      hash |= 0;
-    }
-    return hash;
-  };
-
-  // Sort by stable daily hash so the 3 leaders stay the same all day
+  // Sort by actual growth
   const topLeaders = [...tokensWithGrowth]
-    .sort((a, b) => getDailyScore(b.token_address) - getDailyScore(a.token_address))
+    .sort((a, b) => b.growthPct - a.growthPct)
     .slice(0, 3);
 
   const formatAge = (discoveredAt: string) => {
@@ -59,8 +48,8 @@ export default function GrowthTable() {
           {topLeaders.map(leader => (
             <div key={leader.token_address} className="w-[48%] md:w-auto md:min-w-[140px] flex-shrink-0 bg-paper border border-olive p-4 flex flex-col justify-between shadow-sm">
               <div className="font-mono font-bold text-lg text-ink mb-2">${leader.ticker}</div>
-              <div className="font-mono text-xl md:text-2xl text-olive font-bold mb-2">
-                +{leader.growthPct.toFixed(1)}%
+              <div className={`font-mono text-xl md:text-2xl font-bold mb-2 ${leader.growthPct >= 0 ? 'text-olive' : 'text-red-500'}`}>
+                {leader.growthPct >= 0 ? '+' : ''}{leader.growthPct.toFixed(1)}%
               </div>
               <div className="font-mono text-[10px] text-ink-faint uppercase">
                 {formatAge(leader.discovered_at)}
