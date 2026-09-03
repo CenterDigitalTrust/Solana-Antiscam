@@ -1,1 +1,0 @@
-Error: Execution failed on sql 'SELECT security_status, count(*) as count FROM security_checks GROUP BY security_status': no such column: security_status
