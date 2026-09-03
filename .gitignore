@@ -47,3 +47,6 @@ data/
 *.lnk  
 *.bat  
 .env 
+  
+scratch/  
+check_wolf.py  
