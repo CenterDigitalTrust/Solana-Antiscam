@@ -70,6 +70,8 @@ class Settings:
                                 v = v.strip().strip("'\"")
                                 if k and v and k not in self._env_cache:
                                     self._env_cache[k] = v
+                                    import os
+                                    os.environ[k] = v
                             else:
                                 # Sometimes files contain raw API key on single line
                                 val = line.strip().strip("'\"")
