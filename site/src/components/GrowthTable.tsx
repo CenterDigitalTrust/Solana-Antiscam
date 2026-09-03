@@ -5,7 +5,8 @@ import { useTranslations } from 'next-intl';
 export default function GrowthTable() {
   const t = useTranslations('Growth');
   const allTokens = useTokens();
-  const tokens = allTokens.filter(t => t.status === 'SUCCESS');
+  const passedStates = ['MONITORING', 'READY_TO_ENTER', 'OPEN', 'CLOSED', 'WATCH'];
+  const tokens = allTokens.filter(t => passedStates.includes(t.status));
 
   const tokensWithGrowth = tokens.map(token => {
     const initPrice = Number(token.initial_price_usd || token.price_usd || 0);
@@ -92,7 +93,7 @@ export default function GrowthTable() {
                   <td className="p-4 font-bold text-ink">${currPrice.toFixed(6)}</td>
                   <td className="p-4">
                     <span className="text-[10px] uppercase px-2 py-1 border text-olive border-olive">
-                      {token.status === 'SUCCESS' ? 'LEADER' : token.status}
+                      {token.status}
                     </span>
                   </td>
                 </tr>
