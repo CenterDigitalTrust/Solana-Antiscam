@@ -11,17 +11,23 @@ export default function StatsBar() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
         
         <div className="flex flex-col py-4 md:pr-8 border-b md:border-b-0 md:border-r border-rule">
-          <div className="font-mono text-5xl font-bold text-ink tracking-tight mb-2">{Number(stats?.scanned_today || 0).toLocaleString()}</div>
+          <div className="font-mono text-5xl font-bold text-ink tracking-tight mb-2">
+            {stats ? Number(stats.scanned_today).toLocaleString() : '—'}
+          </div>
           <div className="font-sans text-sm text-ink-soft">{t('scanned')}</div>
         </div>
 
         <div className="flex flex-col py-4 md:px-8 border-b md:border-b-0 md:border-r border-rule">
-          <div className="font-mono text-5xl font-bold text-ink tracking-tight mb-2">{Number(stats?.rejected_today || 0).toLocaleString()}</div>
+          <div className="font-mono text-5xl font-bold text-ink tracking-tight mb-2">
+            {stats ? Number(stats.rejected_today).toLocaleString() : '—'}
+          </div>
           <div className="font-sans text-sm text-ink-soft">{t('rejected')}</div>
         </div>
 
         <div className="flex flex-col py-4 md:pl-8">
-          <div className="font-mono text-5xl font-bold text-ink tracking-tight mb-2">{Number(stats?.passed_today || 0).toLocaleString()}</div>
+          <div className="font-mono text-5xl font-bold text-ink tracking-tight mb-2">
+            {stats ? Number(stats.passed_today).toLocaleString() : '—'}
+          </div>
           <div className="font-sans text-sm text-ink-soft">{t('passed')}</div>
         </div>
 

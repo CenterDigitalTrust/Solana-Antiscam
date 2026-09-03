@@ -11,7 +11,7 @@ export type DailyStats = {
 };
 
 export function useDailyStats() {
-  const [stats, setStats] = useState<DailyStats>({ scanned_today: 0, rejected_today: 0, passed_today: 0, daily_pnl_usd: 0 });
+  const [stats, setStats] = useState<DailyStats | null>(null);
 
   useEffect(() => {
     const fetchInitial = async () => {
