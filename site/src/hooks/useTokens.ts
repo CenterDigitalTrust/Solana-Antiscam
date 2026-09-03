@@ -28,7 +28,7 @@ export function useTokens() {
       const { data, error } = await supabase
         .from('tokens')
         .select('*')
-        .order('updated_at', { ascending: false })
+        .order('discovered_at', { ascending: false })
         .limit(100);
       
       if (!error && data) {
@@ -57,9 +57,11 @@ export function useTokens() {
             if (existsIndex >= 0) {
               const updated = [...current];
               updated[existsIndex] = newToken;
-              return updated.sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
+              return updated.sort((a, b) => new Date(b.discovered_at).getTime() - new Date(a.discovered_at).getTime());
             } else {
-              return [newToken, ...current].slice(0, 100); // Keep top 100 visible in cache
+              return [newToken, ...current]
+                .sort((a, b) => new Date(b.discovered_at).getTime() - new Date(a.discovered_at).getTime())
+                .slice(0, 100); // Keep top 100 visible in cache
             }
           });
         }
