@@ -39,6 +39,7 @@ from core.models import (
 )
 from database.db import Database
 from database.supabase_client import SupabaseManager
+from database.azure_analytics import AnalyticsDBManager, DecisionAction
 from discovery.service import TokenDiscoveryService
 from features.store import FeatureStore
 from ledger.decision_ledger import DecisionLedger
@@ -69,6 +70,8 @@ class AutonomousPaperRunner:
 
         self.db = db or Database()
         self.supabase = SupabaseManager()
+        self.azure_analytics = AnalyticsDBManager()
+        self.azure_analytics.init_schema()
         self.dex_adapter = DexScreenerAdapter()
         self.helius_adapter = HeliusAdapter()
         self.exec_sim = ExecutionSimulator()
@@ -233,6 +236,16 @@ class AutonomousPaperRunner:
             
             # Sync to Supabase for the Patrol MD Website
             self.supabase.upsert_token_state(token, snapshot, security, score)
+            
+            # Save historical snapshot to Azure Analytics DB
+            self.azure_analytics.insert_snapshot(
+                token_address=token.address,
+                price_usd=snapshot.price_usd,
+                liquidity_usd=snapshot.liquidity_usd,
+                market_cap_usd=snapshot.market_cap_usd,
+                raw_json={},
+                score_breakdown=score.breakdown
+            )
 
             # === STATE MACHINE TRANSITIONS ===
             current_p = snapshot.price_usd or 0.0
@@ -264,6 +277,7 @@ class AutonomousPaperRunner:
                 token.entry_block_reason = EntryBlockReason.SECURITY_UNVERIFIED
                 decision_action = TradeAction.REJECT
                 decision_str = f"SECURITY_BLOCKED: {score.decision_reason}"
+                self.azure_analytics.insert_decision(token.address, DecisionAction.REJECTED, decision_str)
             elif in_quarantine:
                 token.state = TokenState.QUARANTINE
                 token.status = TokenState.QUARANTINE
@@ -271,12 +285,14 @@ class AutonomousPaperRunner:
                 remaining_sec = self.quarantine_mgr.remaining_quarantine_seconds(token)
                 decision_action = TradeAction.QUARANTINE_TICK
                 decision_str = f"QUARANTINE ({remaining_sec:.0f}s left)"
+                self.azure_analytics.insert_decision(token.address, DecisionAction.QUARANTINED, decision_str)
             else:
                 # Quarantine Complete -> State is MONITORING / Check Entry
                 token.state = TokenState.MONITORING
                 token.status = TokenState.MONITORING
                 if not token.quarantine_score:
                     token.quarantine_score = score.total_score
+                    self.azure_analytics.insert_decision(token.address, DecisionAction.MONITORING_STARTED, "Quarantine ended, monitoring started")
 
                 # Evaluate Entry Conditions
                 score_ok = (score.total_score is not None and score.total_score >= 70.0)
@@ -465,6 +481,15 @@ class AutonomousPaperRunner:
                     self.db.save_token(token)
                 self._log_trade_sell(closed)
                 self._append_trade_csv(closed)
+                self.azure_analytics.insert_paper_trade(
+                    token_address=closed.token_address,
+                    entry_time=closed.entry_timestamp,
+                    entry_price=closed.entry_price_usd,
+                    exit_time=closed.exit_timestamp,
+                    exit_price=closed.exit_price_usd,
+                    pnl_usd=closed.net_pnl_usd,
+                    pnl_pct=closed.net_pnl_pct
+                )
 
         if closed_in_cycle:
             self.write_all_outputs()
@@ -709,6 +734,15 @@ class AutonomousPaperRunner:
             total_pnl = summary.get("total_closed_net_pnl_usd", 0.0)
             
             self.supabase.update_daily_stats(scanned, rejected, passed, total_pnl)
+            
+            # Upsert into Azure Postgres Daily Aggregate
+            self.azure_analytics.upsert_daily_aggregate(
+                date_obj=now.date(),
+                scanned=scanned,
+                passed=passed,
+                rejected=rejected,
+                avg_pnl=total_pnl
+            )
         except Exception as e:
             pass
 
