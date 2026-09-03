@@ -41,7 +41,7 @@ class SupabaseManager:
                 "mint_authority_active": security.is_mintable,
                 "freeze_authority_active": security.is_freezable,
                 "top10_holder_pct": security.top10_holders_pct or 0.0,
-                "status": score.status.value,
+                "status": token.status.value if hasattr(token.status, 'value') else token.status,
                 "status_reason": score.decision_reason or ""
             }
             

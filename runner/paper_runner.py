@@ -234,8 +234,7 @@ class AutonomousPaperRunner:
             features = self.feature_store.extract_features(token, snapshot, security, liquidity, momentum, score, wallet, history=history)
             self.feature_store.save_features(features)
             
-            # Sync to Supabase for the Patrol MD Website
-            self.supabase.upsert_token_state(token, snapshot, security, score)
+            # Sync moved to after state machine
             
             # Save historical snapshot to Azure Analytics DB
             self.azure_analytics.insert_snapshot(
@@ -336,6 +335,9 @@ class AutonomousPaperRunner:
 
             token.entry_block_reason = block_reason
             self.db.save_token(token)
+            
+            # Sync to Supabase for the Patrol MD Website (with final status)
+            self.supabase.upsert_token_state(token, snapshot, security, score)
 
             self.decision_ledger.record_decision(
                 token=token,
@@ -720,7 +722,10 @@ class AutonomousPaperRunner:
         )
 
     def _update_supabase_stats(self) -> None:
-        """Pushes real-time 24h stats to Supabase for the Next.js UI"""
+        self.sync_daily_stats()
+
+    def sync_daily_stats(self) -> None:
+        """Pushes real-time 24h stats to Supabase and Azure for the UI"""
         try:
             db_tokens = self.db.list_tokens(limit=10000)
             now = utc_now()
@@ -745,7 +750,7 @@ class AutonomousPaperRunner:
                 avg_pnl=total_pnl
             )
         except Exception as e:
-            pass
+            logger.error(f"[AzureDB] Error syncing stats: {e}")
 
     def print_live_console_status(self, results: List[Dict[str, Any]]) -> None:
         """
