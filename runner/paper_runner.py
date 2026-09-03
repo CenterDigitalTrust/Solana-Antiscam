@@ -727,7 +727,8 @@ class AutonomousPaperRunner:
             today_tokens = [t for t in db_tokens if t.discovered_at and (now - t.discovered_at).total_seconds() < 86400]
             
             scanned = len(today_tokens)
-            passed = len([t for t in today_tokens if t.status.value == "SUCCESS"])
+            passed_states = ["MONITORING", "READY_TO_ENTER", "OPEN", "CLOSED", "WATCH"]
+            passed = len([t for t in today_tokens if t.status.value in passed_states])
             rejected = scanned - passed
             
             summary = self.portfolio.get_summary()
