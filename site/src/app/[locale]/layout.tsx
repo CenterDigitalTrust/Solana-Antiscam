@@ -42,6 +42,15 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${fraunces.variable} ${inter.variable} ${ibmPlexMono.variable}`}>
       <head>
         <title>PATROL MD - Autonomous Security</title>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18355552908"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18355552908');
+          `
+        }} />
       </head>
       <body className="bg-beige-0 text-ink antialiased">
         <NextIntlClientProvider messages={messages}>

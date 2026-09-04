@@ -46,12 +46,15 @@ export default function Header() {
           </div>
         </div>
         
-        <nav className="hidden md:flex gap-6 font-mono text-sm text-ink-soft">
+        <nav className="hidden md:flex gap-6 font-mono text-sm text-ink-soft items-center">
           {['Live Feed', 'Methodology', 'Growth', 'Quarantine', 'About'].map((item) => (
              <a key={item} href={`#${item.toLowerCase().replace(' ', '-')}`} className="hover:text-ink transition-colors">
                {item}
              </a>
           ))}
+          <a href="https://github.com/CenterDigitalTrust/Solana-Antiscam" target="_blank" rel="noopener noreferrer" className="border border-ink px-4 py-1.5 hover:bg-ink hover:text-beige-0 transition-colors text-ink uppercase tracking-widest text-xs">
+            GitHub
+          </a>
         </nav>
       </header>
     </div>
