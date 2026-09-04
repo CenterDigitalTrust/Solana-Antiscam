@@ -128,6 +128,7 @@ class TokenSnapshot:
     top10_holders_pct: Optional[float] = None
     creator_balance_pct: Optional[float] = None
     data_sources: List[str] = field(default_factory=list)
+    raw_data: dict = field(default_factory=dict)
     data_quality_score: float = 100.0
     missing_fields: List[str] = field(default_factory=list)
     data_timestamp: Optional[datetime] = None

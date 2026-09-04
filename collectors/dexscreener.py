@@ -184,6 +184,7 @@ class DexScreenerAdapter(MarketDataProvider):
             trade_count_5m=trade_count_5m,
             market_cap_usd=fdv,
             data_sources=[self.name],
+            raw_data=pair,
             data_quality_score=dq_score,
             missing_fields=missing,
         )
@@ -263,6 +264,7 @@ class DexScreenerAdapter(MarketDataProvider):
                     trade_count_5m=buys_5m + sells_5m,
                     market_cap_usd=fdv,
                     data_sources=[self.name],
+                    raw_data=pair,
                     data_quality_score=max(0.0, dq_score),
                     missing_fields=missing,
                 )

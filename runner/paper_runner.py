@@ -242,7 +242,7 @@ class AutonomousPaperRunner:
                 price_usd=snapshot.price_usd,
                 liquidity_usd=snapshot.liquidity_usd,
                 market_cap_usd=snapshot.market_cap_usd,
-                raw_json={},
+                raw_json=snapshot.raw_data,
                 score_breakdown=score.breakdown
             )
 
